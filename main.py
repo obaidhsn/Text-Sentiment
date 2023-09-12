@@ -6,7 +6,7 @@ import torch
 tokenizer = AutoTokenizer.from_pretrained("nlptown/bert-base-multilingual-uncased-sentiment")
 model = AutoModelForSequenceClassification.from_pretrained("nlptown/bert-base-multilingual-uncased-sentiment")
 
-sentence = "kitna ghatiya insan ha yr ye"
+sentence = "it is a good video"
 
 from googletrans import Translator, LANGUAGES
 
