@@ -11,6 +11,14 @@
         <input type="text" id="sentence" name="sentence" required>
         <button type="submit">Submit</button>
     </form>
+
+    {% if sentiment %}
+    <div>
+        <h2>Result:</h2>
+        <p>{{ sentiment }}</p>
+        <p>{{ emotion }}</p>
+    </div>
+    {% endif %}
     
     {% if result %}
     <div>
@@ -18,5 +26,6 @@
         <p>{{ result }}</p>
     </div>
     {% endif %}
+
 </body>
 </html>
