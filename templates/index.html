@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youtube Sentiment Analysis</title>
+</head>
+<body>
+    <h1>Youtube Sentiment Analysis</h1>
+    <form method="POST">
+        <label for="sentence">Enter a sentence:</label>
+        <input type="text" id="sentence" name="sentence" required>
+        <button type="submit">Submit</button>
+    </form>
+    
+    {% if result %}
+    <div>
+        <h2>Result:</h2>
+        <p>{{ result }}</p>
+    </div>
+    {% endif %}
+</body>
+</html>
